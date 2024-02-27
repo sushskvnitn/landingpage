@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    font-family: "DM Sans", sans-serif !important;
+    font-optical-sizing: auto;
+    
+    }
+.landingsection{
+    background: url("../assets/Home.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+/* Updated button styles with gradients */
+.btn-gradient {
+    background: linear-gradient(to right, #4297f9, #434aff);
+    border: none;
+    color: white;
+    padding:  10px  20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size:  16px;
+    margin:  4px  2px;
+    cursor: pointer;
+    transition: background  0.5s ease;
+  }
+  
+  .btn-gradient:hover {
+    background: linear-gradient(to right, #434aff, #5fa8fc);
+  }
+  
+  /* Grid layout for timeline */
+  .timeline-grid {
+    display: grid;
+    grid-template-columns:  1fr  1fr;
+    gap:  20px;
+  }
+  
+  .blueGradient {
+  background: -webkit-linear-gradient(#a49fdb, #0070f3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  }
+  .logoimg{
+    color:transparent
+  }
+  .video-player {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.img-shadow:hover {
+  -webkit-filter: drop-shadow(5px 5px 5px #4571f5);
+  filter: drop-shadow(5px 5px 5px #7481f2);
+}
+
+.video-player-bg {
+  background: rgb(48,27,191);
+background: radial-gradient(circle, rgba(48,27,191,1) 0%, rgba(9,9,121,1) 33%, rgba(9,3,48,1) 94%);
+}
+.timeline-bg{
+  background: rgb(48,27,191);
+background: radial-gradient(circle, rgba(48,27,191,1) 0%, rgba(9,9,121,1) 33%, rgba(9,3,48,1) 94%);
+}
+.info-bg{
+  background: rgb(48,27,191);
+  background: radial-gradient(circle, rgba(48,27,191,1) 0%, rgba(9,9,121,1) 33%, rgba(9,3,48,1) 94%);
+};
+
+#real-estate-video {
+    width: 100%;
+    height: auto;
+    display: block; /* Added to ensure video fills parent container */
+}
+
+.demologo{
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+.boldfont{
+  font-weight: 900;
+}
+ .timelineitems{
+  background: rgb(61,34,243);
+  box-shadow:
+  4.5px 4.5px 3.6px rgba(0, 0, 0, 0.059),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.085),
+  30.1px 30.1px 24.1px rgba(0, 0, 0, 0.111),
+  100px 100px 80px rgba(0, 0, 0, 0.17)
+;
+background: linear-gradient(90deg, rgba(61,34,243,1) 0%, rgba(9,9,121,0.6419817927170868) 93%);
+ }
+  
+.overflowhide{
+  overflow: hidden
+}
+
+ .dotmarginstart{
+  margin-top: -15rem;
+  height: 20rem;
+  margin-left: -4rem;
+ } 
+  .dotmarginend{
+  margin-top: -15rem;
+  height: 20rem;
+  margin-left: 4rem;
+  z-index: -20;
+ } 
+
+ .negmargintop{
+  margin-bottom: -15rem;
+ }
