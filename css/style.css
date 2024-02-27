@@ -44,6 +44,11 @@ body {
     -webkit-text-fill-color: transparent;
     font-weight: 900;
 }
+.textradient {
+    background: -webkit-linear-gradient(#4949ff, #f2f2f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .logoimg {
     color: transparent;
@@ -96,7 +101,7 @@ body {
     color: black !important;
     background: rgb(61, 34, 243);
     box-shadow: 4.5px 4.5px 3.6px rgba(248, 248, 248, 0.059), 12.5px 12.5px 10px rgba(194, 184, 184, 0.085), 30.1px 30.1px 24.1px rgba(67, 58, 58, 0.111), 100px 100px 80px rgba(0, 0, 0, 0.17);
-    background: linear-gradient(90deg, rgb(11, 11, 120) 0%, rgba(255, 255, 255, 0.642) 93%);
+    background: linear-gradient(90deg, rgb(11, 11, 120) 0%, rgba(1, 0, 0, 0.642) 93%);
 }
 
 .overflowhide {
@@ -122,7 +127,53 @@ body {
 
 @media (max-width: 420px) {
     .smallwidth{
-      width: 2rem !important;
+      width: 22rem !important;
     }
-  }
-  
+  }.slider {
+    overflow: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    margin: 0 -0.4rem; /* Adjusted margin to accommodate slide margins */
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(100% / 3 - 0.8rem); /* Adjusted width to accommodate slide margins */
+    padding: 20px;
+    text-align: center;
+    margin: 0 0.4rem; /* Added proper margin */
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #1c126b, #71a7c4);
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 10px;
+    background-color: #e5e7eb;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: #0d3b66; /* Corrected navy blue color */
+    border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+    .slide {
+        width: 100%;
+    }
+}
