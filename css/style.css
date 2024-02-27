@@ -93,9 +93,10 @@ body {
 }
 
 .timelineitems {
+    color: black !important;
     background: rgb(61, 34, 243);
-    box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.059), 12.5px 12.5px 10px rgba(0, 0, 0, 0.085), 30.1px 30.1px 24.1px rgba(0, 0, 0, 0.111), 100px 100px 80px rgba(0, 0, 0, 0.17);
-    background: linear-gradient(90deg, rgba(61, 34, 243, 1) 0%, rgba(9, 9, 121, 0.6419817927170868) 93%);
+    box-shadow: 4.5px 4.5px 3.6px rgba(248, 248, 248, 0.059), 12.5px 12.5px 10px rgba(194, 184, 184, 0.085), 30.1px 30.1px 24.1px rgba(67, 58, 58, 0.111), 100px 100px 80px rgba(0, 0, 0, 0.17);
+    background: linear-gradient(90deg, rgb(11, 11, 120) 0%, rgba(255, 255, 255, 0.642) 93%);
 }
 
 .overflowhide {
@@ -109,12 +110,19 @@ body {
 }
 
 .dotmarginend {
-    margin-top: -15rem;
-    height: 20rem;
-    margin-left: 4rem;
+    margin-top: -10rem;
+    height: 15rem;
+    margin-right: 0.1rem;
     z-index: -20;
 }
 
 .negmargintop {
     margin-bottom: -15rem;
 }
+
+@media (max-width: 420px) {
+    .smallwidth{
+      width: 2rem !important;
+    }
+  }
+  
