@@ -7,7 +7,7 @@ body {
 }
 
 .landingsection {
-    background: url("../assets/Home.png");
+    background: url("../assets/Home.jpg");
     background-size: cover; /* Added */
     background-repeat: no-repeat;
 }
