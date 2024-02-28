@@ -129,7 +129,8 @@ body {
     .smallwidth{
       width: 22rem !important;
     }
-  }.slider {
+  }
+  .slider {
     overflow: hidden;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -150,7 +151,8 @@ body {
     border-radius: 0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #1c126b, #71a7c4);
+    background: linear-gradient(to right, #27285C, #2E2252
+    );
 }
 
 .slide img {
@@ -160,16 +162,16 @@ body {
 
 .progress-bar {
     width: 80%;
-    height: 10px;
+    height: 20px;
     background-color: #e5e7eb;
     margin: 10px auto;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .progress-bar-inner {
     height: 100%;
-    background-color: #0d3b66; /* Corrected navy blue color */
-    border-radius: 5px;
+    background-color: #152733; /* Corrected navy blue color */
+    border-radius: 2px;
 }
 
 @media (max-width: 640px) {
