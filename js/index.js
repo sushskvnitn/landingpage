@@ -20,29 +20,5 @@ window.onload = function() {
     typeWriter();
   };
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const sliderContainer = document.querySelector('.slider-container');
-    const slides = sliderContainer.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    let slideIndex = 0;
-    const slideWidth = slides[0].offsetWidth;
-
-    // Clone the first few slides and append them to the end
-    for (let i = 0; i < totalSlides; i++) {
-        sliderContainer.appendChild(slides[i].cloneNode(true));
-    }
-
-    function showSlides() {
-        slideIndex++;
-        if (slideIndex >= totalSlides) {
-            slideIndex = 0;
-        }
-        const offset = -slideIndex * slideWidth;
-        sliderContainer.style.transform = `translateX(${offset}px)`;
-    }
-
-    setInterval(showSlides, 2000); // Change slide every 2 seconds
-});
-
-
+ 
 
